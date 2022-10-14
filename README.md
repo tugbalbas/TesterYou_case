@@ -1,9 +1,6 @@
 **keytorc-selenium**
 Assignment for Keytorc automation engineer position.
 
-Prerequisites
-if you're using osx or linux you should install maven with following command brew install maven node if you're using windows you should use following command scoop install maven node
-
 Technologies used
 Selenium WebDriver Maven TestNG
 
