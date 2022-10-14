@@ -1,0 +1,13 @@
+Scenario:
+
+1- Siteye git ve anasayfanın acildigini dogrula +
+2- Logine git, giriş yap ve dogrula +
+
+3- Samsung kelimesini arat ve samsung oldugunu dogrula +
+4- 2. sayfaya tikla ve 2. sayfa oldugunu dogrula +
+5- 3. urunu favorilere ekle
+
+6- Favorilere tikla
+7- Urunun bulundugunu dogrula +
+8- Urunu favorilerden kaldır
+9- Urunun kaldırıldıgını dogrula +
