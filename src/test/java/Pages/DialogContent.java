@@ -12,65 +12,79 @@ public class DialogContent extends Parent{
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(className = "banner-accept-button")
-    private WebElement acceptCookies;
+    @FindBy(id = "iconContext-menu")
+    private WebElement menuButton;
 
-    @FindBy(id = "btnMyAccount")
-    private WebElement loginButton;
+    @FindBy(xpath = "//span[contains(text(),'Oscars')]")
+    private WebElement oscarsButton;
 
-    @FindBy(xpath = "//a[contains(text(),'Giriş Yap')]")
-    private WebElement loginButton2;
+    @FindBy(xpath = "//a[text()='1929']")
+    private WebElement yearButton;
 
-    @FindBy(id = "email") // keytorc.test1@gmail.com
-    private WebElement emailInput;
+    @FindBy(xpath = "//a[contains(text(),'Şarlo Sirkte')]")
+    private WebElement theCircusMovie;
 
-    @FindBy(id = "pass") // 123456
-    private WebElement passwordInput;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement firstMovieDirector;
 
-    @FindBy(id = "login-button")
-    private WebElement loginButton3;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[2]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement firstMovieWriter;
 
-    @FindBy(xpath = "//span[contains(text(),'HESABIM')]")
-    public WebElement loginSuccess;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[3]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement firstMovieStars;
 
-    @FindBy(id = "navbar-search-input")
-    private WebElement searchInput; //samsung
+    @FindBy(id = "home_img_holder")
+    private WebElement imdbLogo;
 
-    @FindBy(className = "search__button")
-    private WebElement searchButton;
+    @FindBy(xpath="//input[@type='text']")
+    public WebElement txtBox;
 
-    @FindBy(xpath = "//div[@class='product-list__product-name']")
-    public WebElement samsungProduct;
+    @FindBy(xpath = "//div[contains(text(),'1928')]")
+    private WebElement firstMovieResult;
 
-    @FindBy(xpath = "//body/main[1]/div[1]/div[1]/div[1]/div[4]/div[3]/nav[1]/ul[1]/li[2]/a[1]")
-    private WebElement secondPage;
+    @FindBy(xpath = "//h3[text()='Photos']")
+    public WebElement seeTheGallery;
 
-    @FindBy(xpath = "//a[@class='pagination__content' and text()='2']")
-    public WebElement secondPage2;
+    @FindBy(linkText = "Charles Chaplin")
+    public WebElement firstMovieNewDirector;
 
-    @FindBy(xpath = "(//div[@class='product-list__product-name'])[3]")
-    public WebElement thirdProduct;
+    @FindBy(linkText = "Charles Chaplin")
+    public WebElement firstMovieNewWriter;
 
-    @FindBy(xpath = "//div[@class='basket-cart__product-name']")
-    public WebElement productInFav;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[3]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement firstMovieNewStars;
 
-    @FindBy(id = "fav_Icon")
-    private WebElement addToFav;
 
-    @FindBy(xpath = "(//button[@type='button'])[12]")
-    private WebElement closeFancybox;
+    //second movie
+    @FindBy(xpath = "(//*[text()='The Jazz Singer'])[2]")
+    private WebElement theJazzSingerMovie;
 
-    @FindBy(linkText = "Favori Ürünlerim")
-    private WebElement myFavList;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[1]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondMovieDirector;
 
-    @FindBy(xpath = "//div[@class='product-list__product-name']/h3")
-    public WebElement samsungProducts;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[2]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondMovieWriter;
 
-    @FindBy(className = "basket-cart__product-remove")
-    private WebElement remove;
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[3]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondMovieStar;
 
-    @FindBy(xpath = "//p[contains(text(),'Favori ürünlerinizi takip edebilirsiniz.')]")
-    public WebElement situation;
+    @FindBy(xpath = "//body/div[@id='__next']/nav[@id='imdbHeader']/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/div[2]/div[2]")
+    public WebElement resultJazzSinger;
+
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondNewMovieDirector;
+
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[2]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondNewMovieWriter;
+
+    @FindBy(xpath = "//div[@data-testid='title-pc-wide-screen']//li[3]//div[@class='ipc-metadata-list-item__content-container']")
+    public WebElement secondNewMovieStar;
+
+    @FindBy(xpath="//div[@class='article']")
+    public WebElement imageFrame;
+
+    @FindBy(xpath="(//h3[@class='ipc-title__text'])[1]")
+    public WebElement photosButton;
 
 
 
@@ -78,51 +92,47 @@ public class DialogContent extends Parent{
 
         switch (ElementName) {
 
-            case "acceptCookies":
-                myElement = acceptCookies;
+            case "menuButton":
+                myElement = menuButton;
                 break;
 
-            case "loginButton":
-                myElement = loginButton;
+            case "oscarsButton":
+                myElement = oscarsButton;
                 break;
 
-            case "loginButton2":
-                myElement = loginButton2;
+            case "yearButton":
+                myElement = yearButton;
                 break;
 
-            case "loginButton3":
-                myElement = loginButton3;
+            case "theCircusMovie":
+                myElement = theCircusMovie;
                 break;
 
-            case "searchButton":
-                myElement = searchButton;
+            case "imdbLogo":
+                myElement = imdbLogo;
                 break;
 
-            case "secondPage":
-                myElement = secondPage;
+            case "firstMovieResult":
+                myElement = firstMovieResult;
                 break;
 
-            case "thirdProduct":
-                myElement = thirdProduct;
+            case "seeTheGallery":
+                myElement = seeTheGallery;
                 break;
 
-            case "addToFav":
-                myElement = addToFav;
+            case "theJazzSingerMovie":
+                myElement = theJazzSingerMovie;
                 break;
 
-            case "closeFancybox":
-                myElement = closeFancybox;
+            case "resultJazzSinger":
+                myElement = resultJazzSinger;
                 break;
 
-            case "myFavList":
-                myElement = myFavList;
+            case "photosButton":
+                myElement = photosButton;
                 break;
 
-            case "remove":
-                myElement = remove;
-                break;
         }
-
         clickFunction(myElement);
     }
 
@@ -130,18 +140,9 @@ public class DialogContent extends Parent{
     public void findElementAndSendKeysFunction(String ElementName, String value) {
 
         switch (ElementName) {
-            case "emailInput":
-                myElement = emailInput;
+            case "txtBox":
+                myElement = txtBox;
                 break;
-
-            case "passwordInput":
-                myElement = passwordInput;
-                break;
-
-            case "searchInput":
-                myElement = searchInput;
-                break;
-
         }
 
         sendKeysFunction(myElement, value);

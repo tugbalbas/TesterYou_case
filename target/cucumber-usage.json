@@ -1,1 +1,1 @@
-[{"source":"^Navigate to web site and verify$","steps":[{"name":"Navigate to web site and verify","aggregatedDurations":{"median":1.2840891,"average":1.2840891}}]},{"source":"^Enter username and password and click login button$","steps":[{"name":"Enter username and password and click login button","aggregatedDurations":{"median":2.9618341,"average":2.9618341}}]},{"source":"^User should login successfully$","steps":[{"name":"User should login successfully","aggregatedDurations":{"median":0.6673557,"average":0.6673557}}]}]
+[]

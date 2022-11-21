@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+
 
 public class Parent {
 
@@ -28,8 +28,8 @@ public class Parent {
     public void sendKeysFunction(WebElement element, String value)
     {
         waitUntilVisible(element);// elelman görünüt olana kadar bekle
-        scrollToElement(element);// elemana kadar scroll yap
-        element.clear();// eleman clear yap
+        //scrollToElement(element);// elemana kadar scroll yap
+        //element.clear();// eleman clear yap
         element.sendKeys(value);// value yi gönder
     }
 

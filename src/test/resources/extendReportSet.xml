@@ -12,10 +12,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Keytorc extend report</documentTitle>
+        <documentTitle>testerYou extend report</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Keytorc report</reportName>
+        <reportName>testerYou report</reportName>
 
         <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>

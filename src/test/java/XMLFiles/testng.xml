@@ -4,13 +4,13 @@
     <test verbose="2" preserve-order="true" name="belirliTestler">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="Runners._02_RunnerBelirliTestler"/>
+            <class name="Runners._03_SmokeTest"/>
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="belirliTestler1">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="Runners._02_RunnerBelirliTestler"/>
+            <class name="Runners._03_SmokeTest"/>
         </classes>
     </test>
 </suite>

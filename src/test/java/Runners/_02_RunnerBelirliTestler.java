@@ -13,7 +13,7 @@ import org.testng.annotations.Parameters;
 
         glue = {"StepDefinitions"},
 
-        tags = "@login", // login taglerini çalıştırıcak
+        tags = "@login", // login taglerini çalıştırıcak, bu projede bu tag YOK
 
         plugin = { "pretty",
                 "html:target/site/cucumber-pretty",
