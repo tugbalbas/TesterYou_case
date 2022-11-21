@@ -1,5 +1,5 @@
-**keytorc-selenium**
-Assignment for Keytorc automation engineer position.
+**TesterYou-selenium**
+Assignment for TesterYou automation engineer position.
 
 Technologies used
 Selenium WebDriver Maven TestNG
